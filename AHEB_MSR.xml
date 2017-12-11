@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<UUT xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="htxUut.xsd">
+  <ID>3523</ID>
+  <CommonName>AHEB_MSR</CommonName>
+  <Description />
+  <ResponsesExpected>true</ResponsesExpected>
+  <Interface>
+    <CPRI>
+      <CL3 />
+      <Duplex>FDD</Duplex>
+      <LineRate>16</LineRate>
+      <Ports>
+        <Port id="0">OPT0</Port>
+      </Ports>
+      <IgnoreInvalidDLConfiguration />
+    </CPRI>
+  </Interface>
+  <PowerAmplifiers>
+    <NominalOutputPower dBm="46.0206">
+      <CarrierGroup id="0">
+        <Carrier type="GSM" standard="ARFCN" name="DCS_GSM" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="43.0103" />
+        <Carrier type="LTE" standard="EARFCN" name="3" bandwidth="5" rmsInput="0x7DC" nominalOutput="43.0103" />
+      </CarrierGroup>
+	   <CarrierGroup id="1">
+        <Carrier type="GSM" standard="ARFCN" name="DCS_GSM" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="41.2493" />
+        <Carrier type="GSM" standard="ARFCN" name="DCS_GSM" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="41.2493" />
+        <Carrier type="LTE" standard="EARFCN" name="3" bandwidth="20" rmsInput="0x7DC" nominalOutput="41.2493" />
+      </CarrierGroup>
+      <CarrierGroup id="2">
+        <Carrier type="GSM" standard="ARFCN" name="DCS_GSM" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="40" />
+        <Carrier type="GSM" standard="ARFCN" name="DCS_GSM" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="40" />
+        <Carrier type="LTE" standard="EARFCN" name="3" bandwidth="5" rmsInput="0x7DC" nominalOutput="40" />
+        <Carrier type="LTE" standard="EARFCN" name="3" bandwidth="5" rmsInput="0x7DC" nominalOutput="40" />
+      </CarrierGroup>
+    </NominalOutputPower>
+  </PowerAmplifiers>
+  <Pipes>
+    <Pipe id="0">
+      <FrontEndGain>30</FrontEndGain>
+      <Antennas>
+        <Antenna id="0" hwId="1">
+          <TX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="16">
+                <Rp3 node="170" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="16">
+                <Rp3 node="170" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="16">
+                <Rp3 node="170" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="8" bit="96" sampleSize="16">
+                <Rp3 node="170" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="0" sampleSize="16">
+                <Rp3 node="170" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15" />
+            </CpriCarrier>
+          </TX>
+          <RX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="16">
+                <Rp3 node="170" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="16">
+                <Rp3 node="170" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="16">
+                <Rp3 node="170" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="8" bit="96" sampleSize="16">
+                <Rp3 node="170" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="0" sampleSize="16">
+                <Rp3 node="170" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15" />
+            </CpriCarrier>
+          </RX>
+        </Antenna>
+      </Antennas>
+    </Pipe>
+    <Pipe id="1">
+      <FrontEndGain>30</FrontEndGain>
+      <Antennas>
+        <Antenna id="0" hwId="2">
+          <TX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="3" bit="16" sampleSize="16">
+                <Rp3 node="171" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="0" sampleSize="16">
+                <Rp3 node="171" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="32" sampleSize="16">
+                <Rp3 node="171" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="32" sampleSize="16">
+                <Rp3 node="171" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="64" sampleSize="16">
+                <Rp3 node="171" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15" />
+            </CpriCarrier>
+          </TX>
+          <RX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="3" bit="16" sampleSize="16">
+                <Rp3 node="171" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="0" sampleSize="16">
+                <Rp3 node="171" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="32" sampleSize="16">
+                <Rp3 node="171" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="32" sampleSize="16">
+                <Rp3 node="171" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="64" sampleSize="16">
+                <Rp3 node="171" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15" />
+            </CpriCarrier>
+          </RX>
+        </Antenna>
+      </Antennas>
+    </Pipe>
+    <Pipe id="2">
+      <FrontEndGain>30</FrontEndGain>
+      <Antennas>
+        <Antenna id="0" hwId="3">
+          <TX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="3" bit="48" sampleSize="16">
+                <Rp3 node="172" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="64" sampleSize="16">
+                <Rp3 node="172" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="96" sampleSize="16">
+                <Rp3 node="172" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="96" sampleSize="16">
+                <Rp3 node="172" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="6" bit="0" sampleSize="16">
+                <Rp3 node="172" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="3" bit="44" sampleSize="15" />
+            </CpriCarrier>
+          </TX>
+          <RX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="3" bit="48" sampleSize="16">
+                <Rp3 node="172" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="64" sampleSize="16">
+                <Rp3 node="172" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="5" bit="96" sampleSize="16">
+                <Rp3 node="172" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="9" bit="96" sampleSize="16">
+                <Rp3 node="172" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="6" bit="0" sampleSize="16">
+                <Rp3 node="172" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="3" bit="44" sampleSize="15" />
+            </CpriCarrier>
+          </RX>
+        </Antenna>
+      </Antennas>
+    </Pipe>
+    <Pipe id="3">
+      <FrontEndGain>30</FrontEndGain>
+      <Antennas>
+        <Antenna id="0" hwId="4">
+          <TX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="3" bit="80" sampleSize="16">
+                <Rp3 node="173" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="10" bit="0" sampleSize="16">
+                <Rp3 node="173" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="6" bit="32" sampleSize="16">
+                <Rp3 node="173" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="10" bit="32" sampleSize="16">
+                <Rp3 node="173" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="6" bit="64" sampleSize="16">
+                <Rp3 node="173" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="4" bit="36" sampleSize="15" />
+            </CpriCarrier>
+          </TX>
+          <RX>
+            <CpriCarrier id="0">
+              <CpriTunnelAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="3" bit="80" sampleSize="16">
+                <Rp3 node="173" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="10" bit="0" sampleSize="16">
+                <Rp3 node="173" subnode="0" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="6" bit="32" sampleSize="16">
+                <Rp3 node="173" subnode="0" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="1">
+              <CpriAddress carrierGroupId="0" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15" />
+              <CpriTunnelAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="10" bit="32" sampleSize="16">
+                <Rp3 node="173" subnode="2" />
+              </CpriTunnelAddress>
+              <CpriTunnelAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="6" bit="64" sampleSize="16">
+                <Rp3 node="173" subnode="2" />
+              </CpriTunnelAddress>
+            </CpriCarrier>
+            <CpriCarrier id="2">
+              <CpriAddress carrierGroupId="1" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15" />
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15" />
+            </CpriCarrier>
+            <CpriCarrier id="3">
+              <CpriAddress carrierGroupId="2" basicFN="0" hyperFN="0" word="4" bit="36" sampleSize="15" />
+            </CpriCarrier>
+          </RX>
+        </Antenna>
+      </Antennas>
+    </Pipe>
+  </Pipes>
+</UUT>
