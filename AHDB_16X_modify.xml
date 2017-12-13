@@ -1,0 +1,587 @@
+<?xml version="1.0"?>
+<UUT xsi:noNamespaceSchemaLocation="htxUut.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ID>1009</ID>
+	<CommonName>AHDB_16X_modify</CommonName>
+	<Description>A CPRI L3 Nokia unit</Description>
+    <XslTransformerInfo>
+        <NoOfCPRIPorts>2</NoOfCPRIPorts>
+    </XslTransformerInfo>
+	<ResponsesExpected>true</ResponsesExpected>
+	<PowerSupply>DC</PowerSupply>
+	<TelnetPort>
+		<Address>192.168.101.1</Address>
+		<Port>2323</Port>
+		<Timeouts>
+			<Connect>10000</Connect>
+			<Send>10000</Send>
+			<Receive>10000</Receive>
+		</Timeouts>
+	</TelnetPort>
+	<Interface>
+		<CPRI>
+			<CL3></CL3>
+			<Duplex>FDD</Duplex>
+			<LineRate>16</LineRate>
+      <IgnoreInvalidDLConfiguration/>
+		</CPRI>
+	</Interface>
+	<PowerAmplifiers>
+		<NominalOutputPower dBm="49.0308">
+			<CarrierGroup id="201">
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="49.0308"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="202">
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="46.0205"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="46.0205"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="203">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="20" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="20" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="20" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="151">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="15" rmsInput="0x7DC" nominalOutput="49.0308"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="101">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="10" rmsInput="0x7DC" nominalOutput="49.0308"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="102">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="10" rmsInput="0x7DC" nominalOutput="46.0205"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="46.0205"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="103">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="10" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="51">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="49.0308"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="52">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="46.0205"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="46.0205"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="53">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="44.2596"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="31">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="3" rmsInput="0x7DC" nominalOutput="49.0308"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="32">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="1" rmsInput="0x7DC" nominalOutput="49.0308"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="54">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="43"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="10" rmsInput="0x7DC" nominalOutput="46"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="40"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="40"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="56">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="41.25"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="41.25"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="41.25"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="41.25"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="41.25"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="41.25"></Carrier>
+			</CarrierGroup>
+			<CarrierGroup id="58">
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="40"></Carrier>
+				<Carrier type="LTE" standard="EARFCN" name="8" bandwidth="5" rmsInput="0x7DC" nominalOutput="40"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="39.99"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="39.99"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="39.99"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="39.99"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="39.99"></Carrier>
+				<Carrier type="IOT" standard="EARFCN" name="8" bandwidth="0.2" rmsInput="0x7DC" nominalOutput="39.99"></Carrier>
+			</CarrierGroup>
+		</NominalOutputPower>
+	</PowerAmplifiers>
+	<Pipes>
+		<Pipe id="0" numberOfTxResources="1" numberOfRxResources="1">
+			<FrontEndGain>30</FrontEndGain>
+			<Antennas>
+				<Antenna id="0" hwId="0">
+					<TX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="3" bit="44" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="3" bit="44" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="4" bit="36" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</TX>
+					<RX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="1" bit="120" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="2" bit="52" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="2" bit="112" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="3" bit="44" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="3" bit="44" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="4" bit="36" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</RX>
+				</Antenna>
+			</Antennas>
+		</Pipe>
+		<Pipe id="1" numberOfTxResources="1" numberOfRxResources="1">
+			<FrontEndGain>30</FrontEndGain>
+			<Antennas>
+				<Antenna id="0" hwId="1">
+					<TX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="1" bit="30" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="1" bit="30" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="5" bit="88" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="4" bit="36" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="5" bit="28" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="5" bit="44" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="5" bit="88" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="7" bit="72" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="5" bit="28" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="6" bit="20" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="5" bit="88" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="6" bit="20" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="7" bit="12" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="7" bit="72" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="8" bit="4" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</TX>
+					<RX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="1" bit="30" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="1" bit="30" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="3" bit="104" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="5" bit="88" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="4" bit="36" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="5" bit="28" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="5" bit="44" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="4" bit="96" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="5" bit="88" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="7" bit="72" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="5" bit="28" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="6" bit="20" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="5" bit="88" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="6" bit="20" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="7" bit="12" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="7" bit="72" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="8" bit="4" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</RX>
+				</Antenna>
+			</Antennas>
+		</Pipe>
+		<Pipe id="2" numberOfTxResources="1" numberOfRxResources="1">
+			<FrontEndGain>30</FrontEndGain>
+			<Antennas>
+				<Antenna id="0" hwId="2">
+					<TX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="5" bit="44" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="7" bit="36" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="9" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="7" bit="12" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="8" bit="124" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="10" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="7" bit="72" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="9" bit="56" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="11" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="8" bit="4" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="9" bit="116" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="10" bit="48" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="8" bit="124" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="10" bit="108" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="11" bit="40" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="11" bit="100" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</TX>
+					<RX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="1" bit="60" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="6" bit="80" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="2" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="5" bit="44" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="7" bit="36" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="9" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="7" bit="12" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="8" bit="124" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="10" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="7" bit="72" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="9" bit="56" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="11" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="8" bit="4" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="9" bit="116" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="8" bit="64" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="10" bit="48" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="8" bit="124" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="10" bit="108" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="11" bit="40" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="11" bit="100" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</RX>
+				</Antenna>
+			</Antennas>
+		</Pipe>
+		<Pipe id="3" numberOfTxResources="1" numberOfRxResources="1">
+			<FrontEndGain>30</FrontEndGain>
+			<Antennas>
+				<Antenna id="0" hwId="3">
+					<TX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="9" bit="28" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="9" bit="28" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="2" bit="26" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="2" bit="26" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="12" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="9" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="12" bit="32" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="14" bit="8" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="7" bit="36" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="13" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="9" bit="116" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="12" bit="92" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="11" bit="20" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="14" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="10" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="13" bit="24" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="15" bit="8" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="10" bit="108" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="13" bit="84" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="11" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="14" bit="16" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="11" bit="100" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="14" bit="76" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="15" bit="8" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="15" bit="68" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</TX>
+					<RX>
+						<CpriCarrier id="0">
+							<CpriAddress carrierGroupId="201" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="1" bit="0" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="151" basicFN="0" hyperFN="0" word="9" bit="28" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="101" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="51" basicFN="0" hyperFN="0" word="3" bit="52" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="6" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="9" bit="28" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="31" basicFN="0" hyperFN="0" word="2" bit="26" sampleSize="15"></CpriAddress>
+                            <CpriAddress carrierGroupId="32" basicFN="0" hyperFN="0" word="2" bit="26" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="12" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="9" bit="56" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="12" bit="32" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="1">
+							<CpriAddress carrierGroupId="202" basicFN="0" hyperFN="0" word="12" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="4" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="102" basicFN="0" hyperFN="0" word="14" bit="8" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="52" basicFN="0" hyperFN="0" word="7" bit="36" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="13" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="9" bit="116" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="12" bit="92" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="2">
+							<CpriAddress carrierGroupId="203" basicFN="0" hyperFN="0" word="8" bit="32" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="103" basicFN="0" hyperFN="0" word="10" bit="24" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="53" basicFN="0" hyperFN="0" word="11" bit="20" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="14" bit="16" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="10" bit="48" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="13" bit="24" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="3">
+							<CpriAddress carrierGroupId="54" basicFN="0" hyperFN="0" word="15" bit="8" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="10" bit="108" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="13" bit="84" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="4">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="11" bit="40" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="14" bit="16" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="5">
+							<CpriAddress carrierGroupId="56" basicFN="0" hyperFN="0" word="11" bit="100" sampleSize="15"></CpriAddress>
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="14" bit="76" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="6">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="15" bit="8" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+						<CpriCarrier id="7">
+							<CpriAddress carrierGroupId="58" basicFN="0" hyperFN="0" word="15" bit="68" sampleSize="15"></CpriAddress>
+						</CpriCarrier>
+					</RX>
+				</Antenna>
+			</Antennas>
+		</Pipe>
+	</Pipes>
+</UUT>
