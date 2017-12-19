@@ -1,0 +1,4 @@
+Tortoisegit
+1.mouse right -> delete (git rm)
+2. commit -m "message" (git commit -m "")
+3. push "git push"
