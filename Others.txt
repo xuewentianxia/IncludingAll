@@ -3,4 +3,5 @@
 2. git clone
 3. git reset
 4. git remote
+5. git revert
    
