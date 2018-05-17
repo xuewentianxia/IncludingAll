@@ -1,0 +1,10 @@
+mkdir dir-name
+rm -f <--> file
+rm -rf <--> directory or files in this dir
+rmdir empty-dir
+cat file -- show file content
+cat > *.txt -- create txt file
+>*.txt      -- create empty file
+touch *.txt -- create empty file
+ls dir
+
